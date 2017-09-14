@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        
         <style>
         
-        .header {
-            width:1040;
+        body{
+            background-color:lightgrey;
+        }
+        
+        nav{
+            font-size:20px;
+            display:flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            width: 100%;
+            
+        }
+        
+        #logoNav{
+			align-self: flex-start;
+			flex:3;
+			color: black;
+			font-family: sans-serif;
+			font-size:30px;
+			font-weight: bold;
+			}
+            
+        a {
+            padding: 30px;
+            font-family: sans-serif;
+            text-transform:uppercase;
+
+        }
+        
+       
+        
+        #title{
             text-align:center;
-            margin-left:auto;
-            margin-right: auto;
-            font-family: Helvetica, Arial, sans-serif;
-            padding:20px;
-            text-shadow: 4px 4px 3px red;
-            font-size: 30px;
-            color: blue;
         }
         
         .footer {
@@ -28,35 +53,17 @@
         }
         
         #container {
-            width:960px;
+            width:800px;
             height: 500px;
             text-align:center;
-            background-image:url(Police.jpg);
+            background-image:url(wheel.jpg);
             margin-left:auto;
             margin-right: auto;
             border-radius:30px;
             position:relative;
             }
             
-        #home{
-            width:240px;
-            height:120px;
-            position: absolute;
-            top:0px;
-            left:0;
-            border-radius:50%;
-            border: 10px;
-            background-color:#f920a7;
-            border-style:double;
-            border-color:white;
-            
-        }
-        #home:hover {
-            width: 250px;
-            height: 130px;
-            background-color: pink;
-            transition: width 2s, height 2s, background-color 2s;
-        }
+        
         
         video {
             border-radius:10px;
@@ -68,13 +75,19 @@
             color: #ffffff;
             font-family: Helvetica, Arial, sans-serif;
             padding:20px;
-            text-shadow: 4px 4px 3px red;
             margin-top:0;
         }
         
         a {
-            color: white;
-            text-shadow: 4px 4px 3px blue;
+            color: black;
+            
+        }
+        
+        #linkToTop{
+            position:relative;
+            margin-left:auto;
+            margin-right: auto;
+            width:100px;
         }
         
             
@@ -82,16 +95,22 @@
                     
     </head>
     <body>
-        <div class="header"><h2>GROUP CHALLENGE</h2></div>
+        <nav>
+            <a id="logoNav">GROUP CHALLENGE</a>
+            <a href="#">Home</a>
+            <a href="#">Audio</a>
+            <a href="#">Animation</a>
+        </nav>
+       
         
-        <div id="container"><h1>CAR VIDEO</h1><video controls="controls">
+        <div id="container"><h1>VIDEO</h1><video controls="controls">
             <source src="Car.mp4" type="Video/mp4" preload="metadata"/>
         </video>
         
-        <div id="home"><h1><a href="index.html">Home</a></h1></div>
+        
         </div>
         
-        <div class="footer"><img src="button"/></div>
+        <div class="footer"><a href="#"><img src="button.png" id="linkToTop"/></a></div>
         
         
         
