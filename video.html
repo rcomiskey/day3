@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            video{
+                -webkit-filter: blur(1px) sepia(.9) opacity(.7) hue-rotate(110deg);
+                border-radius:100px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>HTML5 VIDEO</h1>
+        
+        <video controls= "controls" poster="images/jazzcat.png">
+    <source src="video/MP4_Bunny.mp4" type="Video/mp4" preload="metadata"/>
+</video>
+
+<h1>HTML5 AUDIO</h1>
+<audio controls muted>
+    <source src="audio/beats.ogg" type="audio/ogg; codecs=vorbis" preload="auto"/>
+    <source src="audio/beats.mp3" type="audio/mpeg; codecs=mp3" preload="auto"/>
+    You're browser does not support this
+    
+</audio>
+    </body>
+</html>

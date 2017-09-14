@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            div {
+                width:700px;
+                height:125px;
+                margin:10px;
+                
+            }
+            
+            
+            #one{
+                background: linear-gradient(to right, red, lightblue);
+                text-align:center;
+                padding-top:40px;
+                text-shadow:4px 4px 3px blue;
+                -webkit-transform: rotate(30deg);
+                -moz-transform: rotate(30deg);
+                transform: rotate(30deg);
+            }
+            
+            #one:hover {
+                height: 400px;
+                border-radius:120px;
+                background-color: blue;
+                transition: width 10s, height 20s, background-color 10s;
+                box-shadow: 4px 4px 4px yellow;
+       
+            }
+            
+            #two{
+                background: linear-gradient(-45deg, rgba(225,225,0,0), #777777);
+                text-shadow:50px 50px 3px red;
+                text-align:center;
+                padding-top:40px;
+                transform: scale(2, .75);
+            }
+            
+             #two:hover {
+                height: 200px;
+                width:200px;
+                color: blue;
+                transition: width 1s, height 3s, background-color 10s;
+       
+            }
+            #three{
+                background: linear-gradient(to right, pink 1%, red 30%, green 100%);
+                text-align:center;
+                padding-top:40px;
+                transform: skew(45deg, -10deg);
+            }
+            #three:hover {
+                height: 500px;
+                width:500px;
+                background-color: green;
+                transform: skew(5deg, 10deg);
+                transition: background-color 2s ease-out 1s;
+            }
+            #four{
+                background: radial-gradient(purple 20%, orange 100%);
+                text-align:center;
+                padding-top:40px;
+                transform: rotateX(50deg) rotateY(0deg) rotateZ(20deg);
+            }
+             #four:hover {
+                height: 500px;
+                width:500px;
+                background-color: red;
+                transform: scale(2, 1);
+                transition: background-color 2s ease-out 1s;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="one" class="box"><h1>ONE</h1></div>
+        <div id="two" class="box"><h1>TWO</h1></div>
+        <div id="three" class="box"><h1>THREE</h1></div>
+        <div id="four" class="box"><h1>FOUR</h1></div>
+    </body>
+</html>
